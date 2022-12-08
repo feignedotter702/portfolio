@@ -6,7 +6,7 @@ h1 {
     font-family: 'Nerko One', cursive;
     font-size: 70px;
     letter-spacing: 2px;
-    padding-bottom: 1em;
+    /* padding-bottom: 0.5em; */
 }
 h2 {
     font-family: 'Nerko One', cursive;
@@ -859,12 +859,33 @@ button#homeButton:hover {
     padding-top: 100px;
     padding-bottom: 50px;
 }
+.introductionP{
+    background-image: linear-gradient(white, rgba(234, 179, 243, 0.457));
+}
+.research{
+    background-image: linear-gradient(white, rgba(186, 145, 193, 0.5));
+}
+.analysisDefinition{
+    background-image: linear-gradient(white, rgba(198, 148, 207, 0.5));
+}
+.prototypingUserTesting{
+    background-image: linear-gradient(white, rgba(198, 148, 207, 0.5));
+}
+.finalPrototype{
+    background-image: linear-gradient(white, rgba(198, 148, 207, 0.5));
+}
+
+
+
+
+
 #introductionP {
     padding-top: 100px;
 }
 .card {
     border: 0;
     box-shadow: none;
+    background-image: linear-gradient(rgba(236, 207, 241, 0.5), rgba(221, 179, 228, 0.176));
 }
 .card #statements {
     text-align: center;
