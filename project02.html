@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    </style>
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans&display=swap'); 
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    </style>
+   <style> @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap'); </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-89CSB1CFTP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-89CSB1CFTP');
+</script>
+<script src="main.js"></script>
+
+</head>
+
+<header class="header">
+    <div class="headerContainer">
+        <div class="logoName">
+        <button id="homeButton" onclick="window.location.href='index.html';">
+            Back
+        </button>
+            <div class="name" style="align-items: center !important;">
+                <div>Hang Lyu</div>
+            </div>
+        </div>
+
+        <ul class="projectNav">
+            <li><a id="introductionP">Introduction</a></li>
+            <li><a id="research">Lo-fi Prototype</a></li>
+            <li><a id="analysisDefinition">Mock Up</a></li>
+            <!-- <li><a id="prototypingUserTesting">User Testing</a></li> -->
+            <li><a id="finalPrototype">User Testing</a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+
+</header>
+
+
+<section class="kingImg">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+         </div>
+      </div>
+</section>
+
+
+<section class="projectTitleNav">
+    <div class="projectTitle">
+        <h1>
+          Iterative Design for Dumme
+        </h1>
+        <div class="h3">
+          In this project, we designed an interactive interface for an emerging startup.
+        </div>
+        <div class="h3">
+          We did mockup crits with our peers, incorporated the feedbacks, and did a user testing.
+        </div>
+        <div class="h3">
+          This page documents these design and testing process.
+        </div>
+        <div class="h3">
+          Let's get started 👇👇
+        </div>
+    </div>
+
+</section>
+
+
+<section class="introductionP">
+    <div class="sectionTitle">
+        <h1>
+          About the Startup & Our Initial Design
+        </h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <!-- <h3 class="card-title">How Data is Passed Down Through Components</h3> -->
+                    <p class="card-text">We chose to do the interface design for the idea presented by  <a href="https://dumme.com/tech/"></a>Dumme</a> (Big thanks to the founder!):</p>
+                    <p class="card-text">While videos are gradually becoming an significant part of content people consume daily, videos on the web are largely unindexed and unsearchable. Dumme's goal is to index videos with cutting edge AI models, make finding info in video as easy as Cmd+F on a web page.</p>
+                    <p class="card-text">
+                      We brainstormed about the interface of Dumme and each created a set of sketches:
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                  <h3 class="card-title">Sketches from member 1</h3>
+                    <img src="img_iterative/sketch11.png" class="card-img" alt="sketch11">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                  <h3 class="card-title">Sketches from member 2</h3>
+                  <img src="img_iterative/sketch21.png" class="card-img" alt="sketch12">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+              <div class="card">
+                  <h3 class="card-title">Sketches from member 3</h3>
+                  <img src="img_iterative/sketch31.png" class="card-img" alt="sketch11">
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="card">
+                <h3 class="card-title">Sketches from member 4</h3>
+                <img src="img_iterative/sketch41.png" class="card-img" alt="sketch12">
+              </div>
+          </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="research">
+    <div class="sectionTitle">
+        <h1>
+            Lo-fi Prototype
+        </h1>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <p class="card-text">
+              Most of the sketches contain the basic homepage and a result page; for addtional pages, we suggested a upload video page, tutorial page, about page.
+            </p>
+            <p class="card-text">
+              Combining ideas from these sketches, we made the low-fidelity design, consisting of 1) homepage (with a upload toggler), 2) tutorial page, 3) main page, 4) text result page:
+            </p>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+            <div class="col-lg-12">
+              <div class="col-lg-12 col-12 px-3 px-sm-5 ml-md-auto pb-3 pb-sm-5 mb-5">
+                <div id="carouselLowfi" class="carousel carousel-dark slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img_iterative/lofi1.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img_iterative/lofi2.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img_iterative/lofi3.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img_iterative/lofi4.png" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img_iterative/lofi5.png" class="d-block w-100">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLowfi" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselLowfi" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="analysisDefinition">
+    <div class="sectionTitle">
+        <h1>
+          Mock Up
+        </h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">User Analysis</h3>
+                        <p class="card-text">
+                          We built our interactive HiFi prototype and presented it to a group of peers during the lab session.
+                        </p>
+                        <p class="card-text">Summarizing the helpful advice and suggestions we received:</p>
+                        <ul>
+                            <li class="card-text">1. Text in the navigation bar is too small</li>
+                            <li class="card-text">2. The prompts are kind of confusing; usage of the yellow bars and the second search bars unclear; the origin of text result unclear</li>
+                            <li class="card-text">3. Better add a back/undo button for each page</li>
+                            <li class="card-text">4. Prompts on the tutorial page not intuitive for being clickable</li>
+                        </ul>
+                        <p class="card-text">
+                          Our reflection:
+                        </p>
+                        <p class="card-text">
+                          Before modifying, we had our tutorial directly presented in our main function page. What we had in mind was that "after clicking a keyword on the tutorial page, we jump to the main function page, where the clicked keyword and a predetermined video link are auto-filled, and the result is shown".
+We thought such interaction flow would be enough to show the usage of the website. However, many feedbacks we received seemed to stem from the tutorial not being intuitive enough (especially when it is just a prototype, where all the auto-filling cannot be shown). So we decided to add a separate tutorial page.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                  <p class="card-text">
+                    Our prototype(modified ver.), after enlarging the font size, adding a back button from the text result page, and adding the separate tutorial page with notations, looks like this:
+                  </p>
+                  <a href="https://www.figma.com/proto/gvdPOQgpYgjOFLw6XGamWb/Dumme?node-id=3%3A2&scaling=contain&page-id=0%3A1&starting-point-node-id=3%3A2">
+                    <img src="img_iterative/hifi-overview.png" class="card-img" alt="hifi-overview">
+                  </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<section class="finalPrototype">
+    <div class="sectionTitle">
+        <h1>
+            User Testing
+        </h1>
+        <h4 class="card-text">
+          In the final step, we uploaded our modified prototype to a user testing website, gathering evaluations from real-world users.
+        </h4>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">We gave the users the following instruction, and asked them to take as much time as needed to explore the interactions:</p>
+                          <div class="ul">
+                            <li class="list-text">
+                              Imagine you want to learn new concepts or find answers from a long podcast. It is hard to locate an accurate timing and write down the needed information by yourself. Now, with the support of the AI model of Dumme, you can simply upload the podcast and type your question, then you can get the exact timeline that the answers are located and accurately highlighted transcripts.
+                            </li>
+                          </div>
+                        <p class="card-text">
+                          We also asked some followup questions:
+                        </p>
+                        <ul>
+                          <li class="list-text">
+                            Without leaving the homepage, what are your initial impressions of the website?
+                          </li>
+                          <li class="list-text">
+                            What, if anything, is **missing** on this page?
+                          </li>
+                          <li class="list-text">
+                            What, if anything, do you **dislike** about this prototype?
+                          </li>
+                          <li class="list-text">
+                            Is the information on this page helpful?
+                          </li>
+                        </ul>
+                        <p class="card-text">
+                          We got feedbacks from 3 users (You can find the videos of them interacting with the prototype below). They made the following suggestions:
+                        </p>
+                        <ul>
+                          <li class="list-text">
+                            Don't know what they can continue to do after the guide page
+                          </li>
+                          <li class="list-text">
+                            Unable to enter links and drag and drop videos
+                          </li>
+                          <li class="list-text">
+                            Text on the page is not helpful
+                          </li>
+                          <li class="list-text">
+                            Page is too simple and not professional
+                          </li>
+                        </ul>
+                      <p class="card-text">
+                        By observing the users' usage, we found that they didn't seem to understand what the site was for. Because the concept of this site is relatively new, we may still need to find a better way to guide the users (e.g. by providing instructional videos and instructions that will pop up on hovering, to prompt the users on the corresponding usage methods)
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="video-wrapper"> 
+    <video id="home1" width="600" height="300" poster="images/video.jpg" controls="controls" preload="auto"> 
+        <source type="video/mp4" src="img_iterative/vids/UserTestingB.mp4" /> 
+    </video>
+    <video id="home2" width="600" height="300" poster="images/video.jpg" controls="controls" preload="auto"> 
+        <source type="video/mp4" src="img_iterative/vids/UserTestingC.mp4" /> 
+    </video>
+    <div class="clear"></div> 
+</div>
+
+</section>
+
+
+<footer class="footer">
+  <!-- <div class="nothing">
+  </div> -->
+  <div class="footerTitle">
+      <h1>
+          Contact Me
+      </h1>
+  </div>
+  <div class="iconLinkedin">
+      <a href="https://www.linkedin.com/in/hang-lyu21/" target="_blank">
+          <img src="images/img-linkedin-white.svg" alt="LinkedIn" width=60px height=60px>
+      </a>
+  </div>
+  <div class="descriptionLinkedin">
+      <h4>
+          https://www.linkedin.com/in/hang-lyu21/
+      </h4>
+  </div>
+  <div class="iconEmail">
+      <a href="mailto:hanghao0213@gmail.com" target="_blank">
+          <img src="images/img-email-white.svg" alt="Email" width=60px height=60px>
+      </a>
+  </div>
+  <div class="descriptionEmail">
+      <h4>
+          hanghao0213@gmail.com
+      </h4>
+  </div>
+</footer>
+
+
+</html>
