@@ -55,7 +55,8 @@ body {
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    background-color: #f1a4e8;
+    background-color: #fec5f7;
+    /* background-image: linear-gradient(150deg, #c680f8 10%, #FAF8B1 40%, #fab1ce 70%); */
     flex-shrink: 1;
     width: 100%;
     position: fixed;
@@ -246,30 +247,12 @@ a.active {
     width: 100%;
     padding-top: 20px;
 }
-.aboutMeTitle {
-    color: #723885;
-    display: grid;
-    width: 100%;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "nothing pageTitle aboutMeIcons"
-}
 .nothing {
     grid-area: nothing;
 }
 .pageTitle {
     grid-area: pageTitle;
     justify-self: center;
-}
-.aboutMeIcons {
-    grid-area: aboutMeIcons;
-    display: flex;
-    align-items: center;
-}
-.aboutMeIcons:hover {
-    cursor: pointer;
 }
 .iconLinkedin:hover {
     transform: scale(1.2, 1.2);
@@ -332,52 +315,6 @@ a.active {
     line-height: 1.2;
 }
 
-.aboutMeBlock3 {
-    display: grid;
-    justify-content: center;
-    width: 100%;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 50px 380px;
-    grid-template-areas:
-    "subTitle3 aboutMeImage3"
-    "subDescription3 aboutMeImage3"
-}
-.subTitle3 {
-    color: #723885;
-    grid-area: subTitle3;
-}
-.aboutMeImage3 {
-    grid-area: aboutMeImage3;
-    padding-left: 25px;
-}
-.subDescription3 {
-    grid-area: subDescription3;
-}
-
-.aboutMeBlock4 {
-    display: grid;
-    justify-content: center;
-    align-items: space-between;
-    width: 100%;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 50px 380px;
-    grid-template-areas:
-    "aboutMeImage4 subTitle4"
-    "aboutMeImage4 subDescription4"
-}
-.subTitle4 {
-    color: #723885;
-    grid-area: subTitle4;
-    padding-left: 25px;
-}
-.aboutMeImage4 {
-    grid-area: aboutMeImage4;
-}
-.subDescription4 {
-    grid-area: subDescription4;
-    padding-left: 25px;
-}
-
 button {
     padding: 0.5vw 1vw;
     border-radius: 1vw;
@@ -407,14 +344,14 @@ button#homeButton {
     padding: 0.5vw 1vw;
     border-radius: 1vw;
     text-align: center;
-    background-color: #723885;
+    background-color: #8743c0d1;
     color:white;
-    border: 2px solid rgb(235, 181, 241);
+    border: 2px solid rgb(206, 162, 239);
     box-shadow: lightgray;
     align-self: center;
     margin-top: 2.1vw;
     margin-bottom: 2vw;
-    margin-left: 0.5vw;
+    margin-left: 1vw;
     font-size: 1vw;
 }
 
@@ -438,17 +375,7 @@ button#homeButton:hover {
     width: 100%;
     padding-top: 20px;
 }
-.myResumeTitle {
-    display: grid;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "pageTitle pageTitle pageTitle"
-    "pdf email linkedin"
-}
+
 .pageTitle {
     grid-area: pageTitle;
     text-align: center;
@@ -499,7 +426,7 @@ button#homeButton:hover {
     color: #723885;
 }
 
-.myResumeBlock2 {
+/* .myResumeBlock2 {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -516,7 +443,7 @@ button#homeButton:hover {
     width: 1000px;
     height: 400px;
     background-color: gray;
-}
+} */
 
 .myResumeBlock3 {
     display: grid;
@@ -544,12 +471,13 @@ button#homeButton:hover {
 .project3 {
     grid-area: project3;
 }
-/* .projectImage:hover {
-    cursor: pointer;
+.projectImage:hover {
+    /* cursor: pointer;
     outline: 5px solid #F2D533;
     outline-offset: -5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
-} */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) */
+    transform: scale(1.2, 1.2);
+}
 
 .myResumeBlock4 {
     display: grid;
@@ -661,7 +589,7 @@ button#homeButton:hover {
     line-height: 18px;
 }
 
-.NCSU {
+.VT {
     display: grid;
     width: 100%;
     justify-content: space-around;
@@ -670,11 +598,11 @@ button#homeButton:hover {
     grid-template-columns: 180px 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-    "NCSU-logo leftAlign3 rightAlign3"
-    "NCSU-logo NCSU-description NCSU-description"
+    "VT-logo leftAlign3 rightAlign3"
+    "VT-logo VT-description VT-description"
 }
-.NCSU-logo {
-    grid-area: NCSU-logo;
+.VT-logo {
+    grid-area: VT-logo;
     padding-left: 125px;
 }
 .leftAlign3 {
@@ -696,68 +624,20 @@ button#homeButton:hover {
     color: #723885;
     font-weight: 800; 
 }
-.NCSU-description {
-    grid-area: NCSU-description;
+.VT-description {
+    grid-area: VT-description;
     padding-left: 150px;
     padding-right: 100px;
     line-height: 18px;
 }
 
-/*Pagination*/
-.pagination {
-    display: grid;
-    width: 100%;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "paginationLeft paginationRight"
-}
-.pagination a:link {
-    color: black;
-    text-decoration: none;
-}
-.pagination a:hover {
-    text-decoration: underline solid #F2D533;
-    cursor: pointer;
-    color: black;
-}
-.pagination a:visited {
-    color: black;
-}
-.pagination a.active {
-    color: black;
-}
-.paginationLeft {
-    grid-area: paginationLeft;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-}
-.paginationRight {
-    grid-area: paginationRight; 
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 30px;
-}
-.paginationLeft h2:hover {
-    cursor: pointer;
-    text-decoration: underline solid #F2D533;
-}
-.paginationRight h2:hover {
-    cursor: pointer;
-    text-decoration: underline solid #F2D533;
-}
 
 /*Footer*/
 .footer {
     display: grid;
     width: 100%;
-    color: #723885;
-    background-color: #f1a4e8;
+    color: #582c66;
+    background-image: linear-gradient(150deg, #80d2f8 10%, #FAF8B1 40%, #fab1ce 70%);
     grid-template-columns: 608px 832px;
     grid-template-rows: 100x 100px 100px;
     padding-bottom: 25px;
@@ -832,7 +712,9 @@ button#homeButton:hover {
 .projectNav li:hover {
     text-decoration: underline solid;
     cursor: pointer;
+    color: white;
 }
+
 .projectLinksTitle {
     font-family: 'Nerko One', cursive;
     font-size: 36px;
@@ -860,16 +742,16 @@ button#homeButton:hover {
     padding-bottom: 50px;
 }
 .introductionP{
-    background-image: linear-gradient(white, rgba(234, 179, 243, 0.457));
+    background-image: linear-gradient(white, rgba(198, 148, 207, 0.5));
 }
 .research{
-    background-image: linear-gradient(white, rgba(186, 145, 193, 0.5));
+    background-image: linear-gradient(rgba(198, 148, 207, 0.5),  rgb(255, 255, 255));
 }
 .analysisDefinition{
     background-image: linear-gradient(white, rgba(198, 148, 207, 0.5));
 }
 .prototypingUserTesting{
-    background-image: linear-gradient(white, rgba(198, 148, 207, 0.5));
+    background-image: linear-gradient(rgba(198, 148, 207, 0.5), rgb(255, 255, 255));
 }
 .finalPrototype{
     background-image: linear-gradient(white, rgba(198, 148, 207, 0.5));
@@ -885,7 +767,9 @@ button#homeButton:hover {
 .card {
     border: 0;
     box-shadow: none;
-    background-image: linear-gradient(rgba(236, 207, 241, 0.5), rgba(221, 179, 228, 0.176));
+    background-image: linear-gradient(rgba(237, 207, 255, 0.5), rgb(255, 252, 252));
+    /* padding-left: 1ch;
+    padding-right: 1ch; */
 }
 .card #statements {
     text-align: center;
@@ -899,6 +783,23 @@ button#homeButton:hover {
     line-height: 2ch;
 
 }
+.card #hifi_overview:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.card #movie-img:hover{
+    transform: scale(1.1, 1.1);
+}
+/* .card .card-img:hover{
+    transform: scale(1.2, 1.2);
+} */
+/* .card .hifi-img{
+    width: 1200px;
+    height: 550px;
+    justify-content: center;
+
+} */
+
 .card .card-text-sub{
     font-family: 'League Spartan', sans-serif;
     padding-top: 1rem;
@@ -925,13 +826,19 @@ button#homeButton:hover {
     padding-right: 100px;
 } 
 #home1 { 
-    width: 47.5%; 
+    width: 29%; 
     height: 300px; 
     float: left; 
     margin-right: 5%;
 } 
 #home2 { 
-    width: 47.5%; 
+    width: 29%; 
+    height: 300px; 
+    float: left; 
+    margin-right: 5%;
+}
+#home3 { 
+    width: 29%; 
     height: 300px; 
     float: left; 
 }
@@ -1023,491 +930,7 @@ button#homeButton:hover {
         display: none;
     }
 
-/**My Work Introduction Section**/
-    .introduction {
-        z-index: 0;
-        display: grid;
-        padding-top: 100px;
-        grid-template-rows: 300px 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "introRight"
-        "introLeft"
-    }
-    .introText {
-        padding-left: 25px;
-        padding-top: 0px;
-    }
-    .introIcons {
-        justify-content: center;
-    }
-/*My Work Main*/
-.myWork {
-    padding-top: 50px;
-    display: grid;
-    justify-content: center;
-    align-items: start;
-    width: 100%;
-    grid-template-rows: 150px 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "pageTitle"
-    "project1"
-    "project2"
-    "project3"
-    "project4"
-}
-.pageTitle {
-    grid-area: pageTitle;
-}
-.project1 {
-    grid-area: project1;
-    width: 400px;
-    justify-self: center;
-}
-.project2 {
-    grid-area: project2;
-    width: 400px;
-    justify-self: center;
-}
-.project3 {
-    grid-area: project3;
-    width: 400px;
-    justify-self: center;
-}
-.project4 {
-    grid-area: project4;
-    width: 400px;
-    justify-self: center;
-}
-.projectImage {
-    display: flex;
-    justify-content: center;
-    width: 450px;
-}
-.projectImage img {
-    width: 400px;
-    height: 400px;
-}
-
-/*About Me Main*/
-.aboutMeTitle {
-    color: #723885;
-    display: grid;
-    width: 100%;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 100px;
-    grid-template-areas:
-    "pageTitle" 
-    "aboutMeIcons"
-}
-.pageTitle {
-    grid-area: pageTitle;
-    justify-self: center;
-    /* padding-top: 50px; */
-}
-.aboutMeIcons {
-    grid-area: aboutMeIcons;
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    padding-bottom: 25px;
-    /* padding-top: 50px; */
-}
-
-.aboutMeBlock1 {
-    display: grid;
-    justify-content: center;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 380px;
-    grid-template-areas:
-    "subTitle1"
-    "subDescription1"
-    "aboutMeImage1"
-}
-.subTitle1 {
-    color: #723885;
-    grid-area: subTitle1;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-.aboutMeImage1 {
-    grid-area: aboutMeImage1;
-    padding-left: 0px;
-    padding-top: 0px;
-    justify-self: center;
-}
-.subDescription1 {
-    grid-area: subDescription1;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 0px;
-
-}
-
-.aboutMeBlock2 {
-    display: grid;
-    justify-content: center;
-    align-items: space-between;
-    width: 100%;
-    padding-top: 50px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 380px;
-    grid-template-areas:
-    "subTitle2"
-    "subDescription2"
-    "aboutMeImage2"
-}
-.subTitle2 {
-    font-family: 'Klee One', cursive;
-    color: #723885;
-    grid-area: subTitle2;
-    padding-left: 25px;
-}
-.aboutMeImage2 {
-    grid-area: aboutMeImage2;
-    padding-left: 0px;
-    padding-top: 0px;
-    justify-self: center;
-}
-.subDescription2 {
-    grid-area: subDescription2;
-    padding-left: 25px;
-}
-
-.aboutMeBlock3 {
-    display: grid;
-    justify-content: center;
-    align-items: space-between;
-    width: 100%;
-    padding-top: 50px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 380px;
-    grid-template-areas:
-    "subTitle3"
-    "subDescription3"
-    "aboutMeImage3"
-}
-.subTitle3 {
-    color: #723885;
-    grid-area: subTitle3;
-    padding-left: 25px;
-}
-.aboutMeImage3 {
-    grid-area: aboutMeImage3;
-    padding-left: 0px;
-    padding-top: 0px;
-    justify-self: center;
-}
-.subDescription3 {
-    grid-area: subDescription3;
-    padding-left: 25px;
-}
-
-.aboutMeBlock4 {
-    display: grid;
-    justify-content: center;
-    align-items: space-between;
-    width: 100%;
-    padding-top: 50px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 380px;
-    grid-template-areas:
-    "subTitle4"
-    "subDescription4"
-    "aboutMeImage4"
-}
-.subTitle4 {
-    color: #723885;
-    grid-area: subTitle4;
-    padding-left: 25px;
-}
-.aboutMeImage4 {
-    grid-area: aboutMeImage4;
-    padding-left: 0px;
-    padding-top: 0px;
-    justify-self: center;
-}
-.subDescription4 {
-    grid-area: subDescription4;
-    padding-left: 25px;
-}
 
 
-/*My Resume Main*/
-
-.myResumeTitle {
-    display: grid;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "pageTitle"
-}
-.pageTitle {
-    grid-area: pageTitle;
-    text-align: center;
-    color: #723885;
-}
-.pdf {
-    grid-area: pdf;
-    justify-self: center;
-    padding-left: 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.email {
-    grid-area: email;
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.linkedin {
-    grid-area: linkedin;
-    justify-self: center;
-    padding-right: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.skillsInfographic {
-    display: flex;
-    justify-self: center;
-    width: 400px;
-    height: 1000px;
-    background-color: gray;
-}
-
-.myResumeBlock3 {
-    display: grid;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 1fr 1fr 1fr;
-    grid-template-areas:
-    "blockTitle"
-    "project1"
-    "project2"
-    "project3"
-}
-.blockTitle {
-    grid-area: blockTitle;
-    text-align: center;
-    padding-top: 50px;
-}
-.project1 {
-    grid-area: project1;
-    justify-self: center;
-    width: 400px;
-}
-.project2 {
-    grid-area: project2;
-    justify-self: center;
-    width: 400px;
-}
-.project3 {
-    grid-area: project3;
-    justify-self: center;
-    width: 400px;
-}
-
-.myResumeBlock4 {
-    display: grid;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    grid-template-columns: 180px 1fr 1fr;
-    grid-template-rows: 100px 200px 200px 1fr;
-    grid-template-areas:
-    "blockTitle blockTitle blockTitle"
-    "parkerLordLogo leftAlign1 rightAlign1"
-    "description1 description1 description1"
-}
-.blockTitle {
-    grid-area: blockTitle;
-}
-.parkerLordLogo {
-    grid-area: parkerLordLogo;
-    padding-top: 0px;
-    padding-left: 25px;
-    justify-self: flex-start;
-}
-.leftAlign1 {
-    grid-area: leftAlign1;
-    display:flex;
-    flex-direction: column;
-    justify-self: flex-start;
-    align-items: flex-start;
-    text-align: left;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-left: 50px;
-    color: #723885;
-    font-weight: 800; 
-    line-height: 14px;
-}
-.rightAlign1 {
-    grid-area: rightAlign1;
-    display:flex;
-    flex-direction: column;
-    text-align: right;
-    padding-right: 25px;
-    padding-top: 0px;
-    padding-left: 0px;
-    color: #723885;
-    font-weight: 800;
-    line-height: 14px;
-}
-.description1 {
-    grid-area: description1;
-    display:flex;
-    flex-direction: column;
-    padding-left: 25px;
-    padding-right: 25px;
-    line-height: 18px;
-    padding-top: 100px;
-    
-}
-.subtitle {
-    color: #723885;
-    font-weight: 800; 
-    line-height: 0px;
-}
-
-.myResumeBlock5 {
-    padding-top: 50px;
-}
-
-.GeorgiaTech {
-    display: grid;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 50px;
-    grid-template-columns: 180px 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "GT-logo leftAlign2 rightAlign2"
-    "GT-description GT-description GT-description"
-}
-.GT-logo {
-    grid-area: GT-logo;
-    padding-left: 25px;
-}
-.leftAlign2 {
-    grid-area: leftAlign2;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 50px;
-    text-align: left;
-    color: #723885;
-    font-weight: 800; 
-}
-.rightAlign2 {
-    grid-area: rightAlign2;
-    display:flex;
-    flex-direction: column;
-    text-align: right;
-    padding-right: 25px;
-    color: #723885;
-    font-weight: 800;
-}
-.GT-description {
-    grid-area: GT-description;
-    padding-left: 25px;
-    padding-right: 25px;
-    line-height: 18px;
-}
-
-.NCSU {
-    display: grid;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 50px;
-    grid-template-columns: 180px 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "NCSU-logo leftAlign3 rightAlign3"
-    "NCSU-description NCSU-description NCSU-description"
-}
-.NCSU-logo {
-    grid-area: NCSU-logo;
-    padding-left: 60px;
-}
-.leftAlign3 {
-    grid-area: leftAlign3;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 50px;
-    text-align: left;
-    color: #723885;
-    font-weight: 800; 
-}
-.rightAlign3 {
-    grid-area: rightAlign3;
-    display:flex;
-    flex-direction: column;
-    text-align: right;
-    padding-right: 25px;
-    color: #723885;
-    font-weight: 800; 
-}
-.NCSU-description {
-    grid-area: NCSU-description;
-    padding-left: 25px;
-    padding-right: 25px;
-    line-height: 18px;
-}
-
-.myResumeBlock3 {
-    display: grid;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 1fr 1fr 1fr;
-    grid-template-areas:
-    "blockTitle"
-    "project1"
-    "project2"
-    "project3"
-}
-.blockTitle {
-    grid-area: blockTitle;
-    text-align: center;
-    padding-top: 50px;
-}
-.project1 {
-    grid-area: project1;
-    justify-self: center;
-    width: 400px;
-}
-.project2 {
-    grid-area: project2;
-    justify-self: center;
-    width: 400px;
-}
-.project3 {
-    grid-area: project3;
-    justify-self: center;
-    width: 400px;
-}
-
-/*Pagination*/
-.pagination {
-    padding-top: 50px;
-}
 
 }

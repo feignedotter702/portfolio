@@ -36,12 +36,12 @@
 <header class="header">
     <div class="headerContainer">
         <div class="logoName">
+          <div class="logo">
+            <img src="images/Subject.png" alt="ANT" width=55px height=80px>
+        </div>
         <button id="homeButton" onclick="window.location.href='index.html';">
             Back
         </button>
-            <div class="name" style="align-items: center !important;">
-                <div>Hang Lyu</div>
-            </div>
         </div>
 
         <ul class="projectNav">
@@ -49,7 +49,8 @@
             <li><a id="research">Research</a></li>
             <li><a id="analysisDefinition">Design</a></li>
             <!-- <li><a id="prototypingUserTesting">Design</a></li> -->
-            <li><a id="finalPrototype">Final Prototype</a></li>
+            <li><a id="prototypingUserTesting">Result</a></li>
+            <li><a id="finalPrototype">Conclusion</a></li>
         </ul>
 
         <div class="burger">
@@ -304,17 +305,20 @@
 
 
 
-<section class="finalPrototype">
+<section class="prototypingUserTesting">
     <div class="sectionTitle">
         <h1>
-            Final Prototype
+            Result
         </h1>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
             <div class="card">
-              <img src="img_react/final_prototype.png" class="card-img" alt="My Favorite List">
+              <!-- https://feignedotter702.github.io/development/ -->
+              <a href="https://feignedotter702.github.io/development/">
+                <img src="img_react/final_prototype.png" class="card-img" id="movie-img" alt="My Favorite List">
+              </a>
             </div>
         </div>
     </div>
@@ -375,9 +379,70 @@ By clicking on the My favorites section at the top right of the page, the user c
       </div>
   </div>
 </div>
-
 </section>
 
+<section class="finalPrototype">
+  <div class="sectionTitle">
+    <h1>
+        Conclusion
+    </h1>
+
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">
+            Lessons Learned
+          </h3>
+          <p class="card-text">
+            There are some important lessons I learned from this develoment. 
+          </p>
+          <p class="card-text">
+            1. First, React is a great choice for building a website that needs to display and manage large amounts of data. One key advantage of React is that it can break user interface down into smaller, reusable components, which can make it easier to build and maintain complex websites.
+          </p>
+          <p class="card-text">
+            2. Another important lesson is the importance of clean, organized code. When working with a large and complex project like a movie database website, it can be easy for the code to become disorganized and difficult to maintain. To avoid this, it's important to use practices like keeping code modular, using descriptive and consistent naming conventions, and commenting code to make it easier to understand.
+          </p>
+          <p class="card-text">
+            3. Additionally, it's important to consider the user experience when designing a website. Filters and sorting features can help users find the information they're looking for more easily, but it's important to make sure these features are intuitive and easy to use. I may further conduct user testing to get feedback on my design and make sure it meets the needs of my users.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">
+            Future Improvment
+          </h3>
+          <p class="card-text">
+            <ul>
+              <li class="card-text">
+                1. Improving the user interface and design of the website to make it more visually appealing and easy to use. This could involve using modern design techniques, such as responsive design and material design, to make the website look and feel more professional and intuitive.
+              </li>
+              <li class="card-text">
+                2. Adding support for user accounts and login, which would allow users to save their favorite movies, create lists, and share their recommendations with others. This could make the website more engaging and social, and could also help users keep track of the movies they've watched and want to watch in the future.
+              </li>
+              <li class="card-text">
+                3. Adding additional features and functionality, such as reviews, ratings, and recommendations. This could help users discover new movies and make informed decisions about what to watch. For example, you could allow users to write reviews and rate movies, and then use this data to generate personalized recommendations for each user.
+              </li>
+              <li class="card-text">
+                4. Integrating with external movie APIs, such as The Movie Database (TMDb) or the Internet Movie Database (IMDb), to access a larger and more comprehensive dataset of movies. This could allow you to provide more detailed and accurate information about each movie, and could also enable you to add new features, such as trailer links and cast information.
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
 
 <footer class="footer">
   <!-- <div class="nothing">
@@ -388,23 +453,23 @@ By clicking on the My favorites section at the top right of the page, the user c
       </h1>
   </div>
   <div class="iconLinkedin">
-      <a href="https://www.linkedin.com/in/hang-lyu21/" target="_blank">
+      <a href="https://www.linkedin.com/in/feigne-dotter21/" target="_blank">
           <img src="images/img-linkedin-white.svg" alt="LinkedIn" width=60px height=60px>
       </a>
   </div>
   <div class="descriptionLinkedin">
       <h4>
-          https://www.linkedin.com/in/hang-lyu21/
+          https://www.linkedin.com/in/feigne-dotter21/
       </h4>
   </div>
   <div class="iconEmail">
-      <a href="mailto:hanghao0213@gmail.com" target="_blank">
+      <a href="mailto:feigne-dotter@gmail.com" target="_blank">
           <img src="images/img-email-white.svg" alt="Email" width=60px height=60px>
       </a>
   </div>
   <div class="descriptionEmail">
       <h4>
-          hanghao0213@gmail.com
+          feigne-dotter@gmail.com
       </h4>
   </div>
 </footer>
